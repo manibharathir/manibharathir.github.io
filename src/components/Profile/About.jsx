@@ -12,18 +12,11 @@ export default function About({profile}) {
                 <div className="card">
                     <h1 className="name mb-12">{profile.name}</h1>
                     <h2 className="role">{profile.position}</h2>
-
                     <div className="contact-info">
                         <p><strong>Phone : </strong> {profile.stdCode}-{profile.mobile}</p>
                         <p><strong>Email : </strong> {profile.email}</p>
                         <p><strong>Address : </strong> {profile.address}</p>
                     </div>
-
-                    {/* <div className="socials">
-                        <a href="#">{profile.linkedinURL}</a> •
-                        <a href="#">{profile.githubURL}</a> •
-                    </div> */}
-
                     <div class="socials">
                         <a href={profile.linkedinURL} target="_blank">
                             <button class="icon-btn linkedin">
@@ -38,8 +31,7 @@ export default function About({profile}) {
                             </button>
                         </a>
                     </div>
-
-                    <p className="cv-link">See full CV <span>↓</span></p>
+                    {/* <p className="cv-link">See full CV <span>↓</span></p> */}
                 </div>
         </motion.section>
     )

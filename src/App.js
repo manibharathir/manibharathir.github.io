@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Content from './components/Content';
+import Profile from './components/Profile';
 
 function App() {
     return (
         <main className="flex-1 md:h-[100vh]">
-            <Content />
+            <Profile />
         </main>
     );
 }
