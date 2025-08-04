@@ -22,7 +22,7 @@ const TypewriterText = ({ text, speed = 100 }) => {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-[17px] text-justify"
+            className="text-[17px] text-justify leading-[30px]"
         >
             {text.slice(0, index)}
             <span className="animate-pulse">|</span>
