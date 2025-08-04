@@ -31,7 +31,7 @@ export default function About({profile}) {
                             </button>
                         </a>
                     </div>
-                    {/* <p className="cv-link">See full CV <span>↓</span></p> */}
+                    {/* <p className="cv-link">See full CV Soon <span>↓</span></p> */}
                 </div>
         </motion.section>
     )
