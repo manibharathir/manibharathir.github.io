@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/manibharathi.github.io/static/css/main.79f5a65e.css",
-    "main.js": "/manibharathi.github.io/static/js/main.a36371b7.js",
+    "main.css": "/manibharathi.github.io/static/css/main.4f5b0e1d.css",
+    "main.js": "/manibharathi.github.io/static/js/main.a24f1ae9.js",
     "static/js/453.c373743e.chunk.js": "/manibharathi.github.io/static/js/453.c373743e.chunk.js",
+    "static/media/hero.jpeg": "/manibharathi.github.io/static/media/hero.b3da4662ff9cbde5cd53.jpeg",
     "static/media/profile_pic.jpg": "/manibharathi.github.io/static/media/profile_pic.cf126a3e70ff16f75eaa.jpg",
     "index.html": "/manibharathi.github.io/index.html",
-    "main.79f5a65e.css.map": "/manibharathi.github.io/static/css/main.79f5a65e.css.map",
-    "main.a36371b7.js.map": "/manibharathi.github.io/static/js/main.a36371b7.js.map",
+    "main.4f5b0e1d.css.map": "/manibharathi.github.io/static/css/main.4f5b0e1d.css.map",
+    "main.a24f1ae9.js.map": "/manibharathi.github.io/static/js/main.a24f1ae9.js.map",
     "453.c373743e.chunk.js.map": "/manibharathi.github.io/static/js/453.c373743e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79f5a65e.css",
-    "static/js/main.a36371b7.js"
+    "static/css/main.4f5b0e1d.css",
+    "static/js/main.a24f1ae9.js"
   ]
 }
