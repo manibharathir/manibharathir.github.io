@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Content from './components/Content';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>Portfolio up soon ....</p>
-            </header>
-        </div>
+        <main className="flex-1 md:h-[100vh]">
+            <Content />
+        </main>
     );
 }
 

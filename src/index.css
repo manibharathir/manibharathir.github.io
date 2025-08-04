@@ -1,3 +1,9 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,120 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+.logo {
+    color: white;
+    z-index: 3;
+}
+
+.logo_curve_bg1 {
+    border: 1px solid white;
+    box-shadow: 4px -0.00px 0px 0px white;
+    border-radius: 90%;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.logo_curve_bg2 {
+    border-radius: 90%;
+    width: 53px;
+    height: 35px;
+    z-index: 2;
+    background: rgb(142, 166, 155);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    /* .logo_curve_bg1 {
+        animation: App-logo-spin infinite 20s linear;
+    } */
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    padding: 100px 40px 40px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.name {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+
+.role {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+.socials {
+    margin: 20px 0;
+}
+
+.socials a {
+    color: black;
+    text-decoration: underline;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.cv-link {
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.cv-link span {
+    display: inline-block;
+    transform: translateY(2px);
+}
+
+.icon-btn {
+    width: 60px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 45px;
+    margin: 4px;
+    text-decoration: underline;
+}
+
+.linkedin {
+    color: rgb(0, 119, 181);
+}
+
+.github {
+    color: black;
+}
+
+.about-me {
+    opacity: 1;
+    transition: opacity 2s;
 }
