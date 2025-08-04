@@ -1,38 +1,18 @@
-import { motion } from "motion/react";
+import TypewriterText from "./TypewriterText";
 
-export default function About({profile}) {
+const aboutmeText = "With over 15 years of hands-on experience in front-end development, expertise spans building responsive, high-performance web applications using React, modern JavaScript (ES6+), HTML5, and CSS3. Skilled in optimizing UI performance, managing complex state with tools like Redux or Context API, and designing scalable, component-driven architectures. Known for delivering clean, maintainable code while following best practices in accessibility, cross-browser support, and performance optimization. Passionate about translating complex requirements into smooth, user-centric digital experiences.";
+
+export default function About() {
     return (
-        <motion.section 
-            className="about-me" 
-            initial={{ opacity: 0 }} 
-            animate={{ 
-                opacity: 1,
-                transition: { duration: 4 }
-            }}>
-                <div className="card">
-                    <h1 className="name mb-12">{profile.name}</h1>
-                    <h2 className="role">{profile.position}</h2>
-                    <div className="contact-info">
-                        <p><strong>Phone : </strong> {profile.stdCode}-{profile.mobile}</p>
-                        <p><strong>Email : </strong> {profile.email}</p>
-                        <p><strong>Address : </strong> {profile.address}</p>
-                    </div>
-                    <div class="socials">
-                        <a href={profile.linkedinURL} target="_blank">
-                            <button class="icon-btn linkedin">
-                                {/* <i class="fa fa-linkedin"></i> */}
-                                LinkedIn
-                            </button>
-                        </a>
-                        <a href={profile.githubURL} target="_blank">
-                            <button class="icon-btn github">
-                                {/* <i class="fa fa-github"></i> */}
-                                Github
-                            </button>
-                        </a>
-                    </div>
-                    {/* <p className="cv-link">See full CV Soon <span>↓</span></p> */}
-                </div>
-        </motion.section>
+        <div className="about-me">
+            <div className="heading">
+                <h2>ABOUT</h2>
+                <div className="line"></div>
+            </div>
+            <TypewriterText text={aboutmeText} speed={1} />
+            {/* <p>
+                With over 15 years of hands-on experience in front-end development, expertise spans building responsive, high-performance web applications using React, modern JavaScript (ES6+), HTML5, and CSS3. Skilled in optimizing UI performance, managing complex state with tools like Redux or Context API, and designing scalable, component-driven architectures. Known for delivering clean, maintainable code while following best practices in accessibility, cross-browser support, and performance optimization. Passionate about translating complex requirements into smooth, user-centric digital experiences.
+            </p> */}
+        </div>
     )
 }

@@ -1,6 +1,7 @@
-import About from './Profile/About';
+import MyInfo from './Profile/MyInfo';
 import Logo from './Profile/Logo';
 import Picture from './Profile/Picture';
+import About from './Profile/About';
 
 const profile = {
     name: 'Mani Bharathi Rajendran',
@@ -16,10 +17,11 @@ const profile = {
 export default function Profile() {
     return (
         <section className="flex h-full flex-col-reverse md:flex-row">
-            <div className="md:flex-1 h-inherit">
-                <About profile={profile} />
+            <div className="h-inherit mt-[260px] md:mt-0 md:w-[50%]">
+                <MyInfo profile={profile} />
+                <About />
             </div>
-            <div className="bg-[#8ea69b] h-[160px] md:h-auto md:flex-1 flex-column md:flex-row h-inherit">
+            <div className="bg-[#8ea69b] h-[300px] md:h-[100vh] flex-column md:flex-row h-inherit md:w-[50%] fixed right-0 top-0">
                 <Logo />
                 <Picture />
             </div>
