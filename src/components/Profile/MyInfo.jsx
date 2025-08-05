@@ -7,7 +7,7 @@ export default function MyInfo({ profile }) {
             initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
-                transition: { duration: 4 }
+                transition: { duration: 5 }
             }}>
             <div className="card">
                 <h1 className="name mb-12">{profile.name}</h1>
@@ -31,7 +31,7 @@ export default function MyInfo({ profile }) {
                         </button>
                     </a>
                 </div>
-                <p className="cv-link">
+                {/* <p className="cv-link">
                     Full CV
                     <motion.span animate={{
                         y: [0, -10, 0], // bounce up and return
@@ -41,7 +41,8 @@ export default function MyInfo({ profile }) {
                             repeat: Infinity,
                             ease: "easeInOut",
                         }}
-                        className="flex justify-center items-center mt-10 text-gray-600 ml-1">↓</motion.span></p>
+                        className="flex justify-center items-center mt-10 text-gray-600 ml-1">↓</motion.span>
+                </p> */}
             </div>
         </motion.section>
     )
