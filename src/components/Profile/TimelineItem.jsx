@@ -7,7 +7,7 @@ export default function TimelineItem({ item, index }) {
     const variants = {
         hidden: {
             opacity: 0,
-            x: item.side === 'left' ? -100 : 100,
+            x: item.side === 'left' ? -10 : 10,
         },
         visible: {
             opacity: 1,

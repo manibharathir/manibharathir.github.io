@@ -10,7 +10,7 @@ export default function Picture() {
                 opacity: 1,
                 transition: { duration: 2 }
             }}>
-                <img src={ProfilePic} className='w-[40%] md:w-[60%] rounded-md justify-self-center' />
+                <img src={ProfilePic} className='relative left-[27%] w-[40%] md:w-[60%] rounded-md' />
         </motion.div>
     )
 }
