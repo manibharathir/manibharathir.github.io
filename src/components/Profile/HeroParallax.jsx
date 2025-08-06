@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import HeroImg from '../../assets/images/hero.jpeg';
+import HeroImg from '../../assets/images/hero.png';
 
 export default function HeroParallax() {
     const [offsetY, setOffsetY] = useState(0);
@@ -16,7 +16,7 @@ export default function HeroParallax() {
             <div
                 className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-20"
                 style={{
-                    // backgroundImage: `url(${HeroImg})`,
+                    backgroundImage: `url(${HeroImg})`,
                     transform: `translateY(${offsetY * 0.5}px)`, // slower scroll
                 }}
             />
