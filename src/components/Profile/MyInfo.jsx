@@ -11,9 +11,9 @@ export default function MyInfo({ profile }) {
                 opacity: 1,
                 transition: { duration: 5 }
             }}>
-            <div className="card">
-                <h1 className="name mb-12">{profile.name}</h1>
-                <h2 className="role">{profile.position}</h2>
+            <div className="pt-[60px] px-[40px] pb-[40px] text-left leading-[1.6]">
+                <h1 className="text-[2.8rem] leading-[3.5rem] font-bold mb-[30px]">{profile.name}</h1>
+                <h2 className="role text-[1.5rem] font-normal mt-[5px] mb-[30px]">{profile.position}</h2>
                 <div className="contact-info">
                     <p><strong>Phone : </strong> {profile.stdCode}-{profile.mobile}</p>
                     <p><strong>Email : </strong> {profile.email}</p>

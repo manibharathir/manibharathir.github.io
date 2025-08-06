@@ -56,23 +56,7 @@ code {
     }
 }
 
-.card {
-    padding: 120px 40px 40px;
-    text-align: left;
-    line-height: 1.6;
-}
-
-.name {
-    font-size: 2.8rem;
-    line-height: 3.5rem;
-    font-weight: 700;
-}
-
 .role {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 30px;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
