@@ -5,7 +5,7 @@ const aboutmeText = `With over 15 years of hands-on experience in front-end deve
 
 export default function About() {
     return (
-        <div className="px-[40px] py-[80px]">
+        <div className="px-[40px] pt-[20px] pb-[70px]">
             <div className="flex items-center gap-[20px] mb-[30px]">
                 <h2 className="text-[24px] m-0 font-bold tracking-[0.5em]">ABOUT</h2>
                 <div className="flex-grow h-[1px] bg-black"></div>

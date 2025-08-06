@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import { SiGithub } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa';
 
 export default function MyInfo({ profile }) {
     return (
@@ -17,17 +19,15 @@ export default function MyInfo({ profile }) {
                     <p><strong>Email : </strong> {profile.email}</p>
                     <p><strong>Address : </strong> {profile.address}</p>
                 </div>
-                <div className="socials">
+                <div className="mt-4 mb-2">
                     <a href={profile.linkedinURL} target="_blank">
-                        <button className="icon-btn linkedin">
-                            {/* <i class="fa fa-linkedin"></i> */}
-                            LinkedIn
+                        <button className="mr-3 linkedin text-[#0077b5]">
+                            <FaLinkedin size={30} />
                         </button>
                     </a>
                     <a href={profile.githubURL} target="_blank">
-                        <button className="icon-btn github">
-                            {/* <i class="fa fa-github"></i> */}
-                            Github
+                        <button className="github text-black">
+                            <SiGithub size={30} />
                         </button>
                     </a>
                 </div>

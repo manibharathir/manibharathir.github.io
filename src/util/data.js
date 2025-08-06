@@ -52,3 +52,14 @@ export const eductaion = [
         side: 'right'
     }
 ]
+
+export const profile = {
+    name: 'Mani Bharathi Rajendran',
+    position: 'Principal Frontend Engineer & UI Solutions Architect',
+    stdCode: '+91',
+    mobile: '9535876178',
+    email: 'manibharathir@gmail.com',
+    address: 'Bangalore',
+    linkedinURL: 'https://www.linkedin.com/in/manibharathir/',
+    githubURL: 'https://github.com/manibharathir'
+}
