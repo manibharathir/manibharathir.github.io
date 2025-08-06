@@ -20,7 +20,7 @@ export default function TimelineItem({ item, index }) {
     };
     return (
         <motion.div
-            className={`timeline-item relative w-[50%] py-[20px] md:px-[40px] box-border ${item.side} ${item.side === 'right' ? 'pl-8 pr-2' : 'pr-8 pl-2'}`}
+            className={`timeline-item relative w-[50%] py-[20px] md:px-[20px] box-border ${item.side} ${item.side === 'right' ? 'pl-8 pr-2' : 'pr-8 pl-2'}`}
             ref={ref}
             variants={variants}
             initial="hidden"

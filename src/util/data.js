@@ -1,31 +1,38 @@
 export const experience = [
     {
         year: 'Jun 2021 - Present',
-        organisation: 'Tata Consultancy Services, Bangalore, India',
+        organisation: 'Tata Consultancy Services',
         position: 'Associate Consultant',
         value: '',
         side: 'right'
     },
     {
         year: 'Mar 2020 - Jun 2021',
-        organisation: 'Quest Global, Bangalore, India',
+        organisation: 'Quest Global',
         position: 'Technical Lead',
         value: '',
         side: 'left'
     },
     {
-        year: 'Jun 2014 - Feb 2020',
-        organisation: 'Compassites Software Solutions, Bangalore, India',
-        position: 'Lead Engineer',
+        year: 'Apr 2016 - Feb 2020',
+        organisation: 'Compassites Software Solutions Pvt. Ltd.',
+        position: 'Lead UI Engineer',
         value: '',
         side: 'right'
     },
     {
-        year: 'Aug 2010 - May 2014',
-        organisation: 'HCL Technologies for Yahoo Software Development Center',
-        position: 'Front End Software Engineer',
+        year: 'Jun 2014 - Mar 2016',
+        organisation: 'Compassites Software Solutions Pvt. Ltd.',
+        position: 'Senior Consultant',
         value: '',
         side: 'left'
+    },
+    {
+        year: 'Aug 2010 - May 2014',
+        organisation: 'HCL Technologies for Yahoo SDC',
+        position: 'Software Engineer',
+        value: '',
+        side: 'right'
     }
 ]
 

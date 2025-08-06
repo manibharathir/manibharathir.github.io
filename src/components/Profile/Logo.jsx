@@ -1,6 +1,6 @@
 export default function Logo() {
     return (
-        <div className='p-[20px]'>
+        <div className='py-[15px] px-[20px]'>
             <div className="logo_wrap relative h-[40px]">
                 <div className="logo_curve_bg1 absolute top-0 left-[35px]"></div>
                 <div className="logo_curve_bg2 absolute top-0 left-[4px]"></div>

@@ -55,7 +55,7 @@ export default function Profile() {
                 </main>
                 <aside
                     ref={asideRef}
-                    className={`bg-[#8ea69b] z-[1] h-[300px] md:h-[100vh] flex-column md:flex-row h-inherit md:w-[25%] transition-all duration-300 ${isSticky && !isBottomAbs ? "fixed top-0 right-0" : isBottomAbs ? "absolute bottom-0 right-0" : "relative"
+                    className={`bg-[#8ea69b] z-[1] h-[250px] md:h-[100vh] flex-column md:flex-row h-inherit md:w-[25%] transition-all duration-300 ${isSticky && !isBottomAbs ? "fixed top-0 right-0" : isBottomAbs ? "absolute bottom-0 right-0" : "relative"
                         }`}
                 >
                     <Logo />
