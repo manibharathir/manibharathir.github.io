@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import HeroImg from '../../assets/images/hero.jpeg';
+// import HeroImg from '../../assets/images/hero.jpeg';
 
 export default function HeroParallax() {
     const [offsetY, setOffsetY] = useState(0);

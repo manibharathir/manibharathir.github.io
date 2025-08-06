@@ -1,5 +1,5 @@
-import { FaCode, FaBug, FaTools, FaLaptopCode, FaCogs, FaProjectDiagram, FaVial, FaCss3Alt, FaJs, FaLinux } from 'react-icons/fa';
-import { SiMacos, SiWindows, SiJirasoftware, SiGithub, SiBitbucket, SiRedux, SiTailwindcss, SiBootstrap, SiMaterialui, SiVite, SiPostman, SiPython } from 'react-icons/si';
+import { FaCode, FaTools, FaProjectDiagram, FaCss3Alt } from 'react-icons/fa';
+import { SiGithub, SiRedux } from 'react-icons/si';
 
 const skills = [
     {
@@ -41,7 +41,7 @@ export default function Skills() {
                 🧠 Technical Skills
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
                 {skills.map((skill, idx) => (
                     <div key={idx} className="bg-white dark:bg-gray-800 shadow-md p-6 rounded-lg transition hover:shadow-xl hover:-translate-y-1">
                         <div className="flex items-center gap-4 mb-4 text-indigo-600 dark:text-indigo-400">

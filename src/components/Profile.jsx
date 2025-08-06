@@ -15,7 +15,6 @@ export default function Profile() {
     const asideRef = useRef(null);
     const [isSticky, setIsSticky] = useState(false);
     const [isBottomAbs, setIsBottomAbs] = useState(false);
-    let CSSClass = 'regular';
 
     useEffect(() => {
         const onScroll = () => {

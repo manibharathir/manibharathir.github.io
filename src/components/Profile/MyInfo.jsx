@@ -20,12 +20,12 @@ export default function MyInfo({ profile }) {
                     <p><strong>Address : </strong> {profile.address}</p>
                 </div>
                 <div className="mt-4 mb-2">
-                    <a href={profile.linkedinURL} target="_blank">
+                    <a href={profile.linkedinURL} target="_blank" rel="noreferrer">
                         <button className="mr-3 linkedin text-[#0077b5]">
                             <FaLinkedin size={30} />
                         </button>
                     </a>
-                    <a href={profile.githubURL} target="_blank">
+                    <a href={profile.githubURL} target="_blank" rel="noreferrer">
                         <button className="github text-black">
                             <SiGithub size={30} />
                         </button>
