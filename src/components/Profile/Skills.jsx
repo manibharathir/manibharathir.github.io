@@ -3,11 +3,6 @@ import { SiMacos, SiWindows, SiJirasoftware, SiGithub, SiBitbucket, SiRedux, SiT
 
 const skills = [
     {
-        title: "Operating Systems",
-        icon: <FaLaptopCode size={30} />,
-        items: ["macOS", "Windows", "Linux (Ubuntu)"]
-    },
-    {
         title: "Scripting Languages",
         icon: <FaCode size={30} />,
         items: ["JavaScript", "TypeScript", "Python (basic)"]
@@ -28,30 +23,15 @@ const skills = [
         items: ["Git", "GitHub", "Bitbucket"]
     },
     {
-        title: "Bug Tracking",
-        icon: <FaBug size={30} />,
-        items: ["JIRA", "GitHub Issues"]
-    },
-    {
         title: "Debugging Tools",
         icon: <FaTools size={30} />,
         items: ["Chrome DevTools", "React Developer Tools", "Redux DevTools", "VSCode Debugger"]
     },
     {
-        title: "Agile Tool",
-        icon: <SiJirasoftware size={30} />,
-        items: ["JIRA"]
-    },
-    {
         title: "Project Management",
         icon: <FaProjectDiagram size={30} />,
         items: ["JIRA", "Trello"]
-    },
-    {
-        title: "Front-end / Design Tools",
-        icon: <SiPostman size={30} />,
-        items: ["Postman", "Vite", "Create React App"]
-    },
+    }
 ];
 
 export default function Skills() {
