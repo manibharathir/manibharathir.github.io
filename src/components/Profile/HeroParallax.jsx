@@ -56,7 +56,7 @@ export default function HeroParallax({ profile }) {
                     </div>
                     <div className="text-xl">
                         <p className="flex items-center md:justify-center mb-3"><FaLinkedin size={20} /> <a href={profile.linkedinURL} target="_blank" rel="noreferrer" className="ml-2 break-all">{profile.linkedinURL}</a></p>
-                        <p className="flex items-center md:justify-center mb-3"><SiGithub size={20} /> <a href={profile.githubURL} target="_blank" rel="noreferrer" className="ml-2">{profile.githubURL}</a></p>
+                        {/* <p className="flex items-center md:justify-center mb-3"><SiGithub size={20} /> <a href={profile.githubURL} target="_blank" rel="noreferrer" className="ml-2">{profile.githubURL}</a></p> */}
                     </div>
                 </div>
             </div>
