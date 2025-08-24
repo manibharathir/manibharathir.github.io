@@ -1,6 +1,4 @@
 import { motion } from "motion/react";
-import { SiGithub } from 'react-icons/si';
-import { FaLinkedin } from 'react-icons/fa';
 
 export default function MyInfo({ profile }) {
     return (
@@ -12,9 +10,9 @@ export default function MyInfo({ profile }) {
                 transition: { duration: 5 }
             }}>
             <div className="pt-[60px] px-[40px] pb-[40px] text-left leading-[1.6]">
-                <h1 className="text-[2.8rem] leading-[3.5rem] font-bold mb-[30px]">{profile.name}</h1>
-                <h2 className="role text-[1.5rem] font-normal mt-[5px] mb-[30px]">{profile.position}</h2>
-                <div className="contact-info">
+                {/* <h1 className="text-[2.8rem] leading-[3.5rem] font-bold mb-[30px]">{profile.name}</h1>
+                <h2 className="role text-[1.5rem] font-normal mt-[5px] mb-[30px]">{profile.position}</h2> */}
+                {/* <div className="contact-info">
                     <p><strong>Phone : </strong> {profile.stdCode}-{profile.mobile}</p>
                     <p><strong>Email : </strong> {profile.email}</p>
                     <p><strong>Address : </strong> {profile.address}</p>
@@ -30,7 +28,7 @@ export default function MyInfo({ profile }) {
                             <SiGithub size={30} />
                         </button>
                     </a>
-                </div>
+                </div> */}
                 {/* <p className="cv-link">
                     Full CV
                     <motion.span animate={{

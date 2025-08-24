@@ -42,13 +42,13 @@ export default function Profile() {
                 ref={heroRef}
                 className="h-screen bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center text-white text-5xl font-bold"
             >
-                <HeroParallax />
+                <HeroParallax profile={profile} />
             </section>
             <div className="relative flex flex-col-reverse md:flex-row">
                 <main className={`h-inherit ${isSticky ? 'mt-[300px]' : 'mt-[0px]'} md:mt-0 md:w-[75%]`} ref={mainRef}>
-                    <MyInfo profile={profile} />
+                    {/* <MyInfo profile={profile} /> */}
                     <About />
-                    <div>
+                    <div className='py-[20px] bg-black/60'>
                         <Timeline items={experience} title="Experience" />
                         <Timeline items={eductaion} title="Education" />
                     </div>

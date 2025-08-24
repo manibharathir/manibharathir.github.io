@@ -30,8 +30,8 @@ export default function TimelineItem({ item, index }) {
                     className="timeline-content break-words bg-white/40 p-[20px] rounded-[10px]"
                 >
                     <h4 className="text-white font-bold mb-[10px]">{item.year}</h4>
-                    <h3 className="text-[18px] my-[5px] mx-0">{item.organisation}</h3>
-                    <h4 className="text-[16px] my-[10px] mx-0 font-bold">{item.position}</h4>
+                    <h3 className="text-[18px] my-[5px] mx-0"><span className="text-[16px] font-bold">{item.position}</span> @ {item.organisation}</h3>
+                    {/* <h4 className="text-[16px] my-[10px] mx-0 font-bold">{item.position}</h4> */}
                     {item.value !== "" && <p className="text-white text-3xl font-bold">{item.value}</p>}
                 </div>
         </motion.div>
