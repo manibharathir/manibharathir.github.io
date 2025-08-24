@@ -5,86 +5,86 @@
 
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .logo {
-    color: white;
-    z-index: 3;
+  color: white;
+  z-index: 3;
 }
 
 .logo_curve_bg1 {
-    border: 1px solid white;
-    box-shadow: 4px -0.00px 0px 0px white;
-    border-radius: 90%;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
+  border: 1px solid white;
+  box-shadow: 4px -0.00px 0px 0px white;
+  border-radius: 90%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
 }
 
 .logo_curve_bg2 {
-    border-radius: 90%;
-    width: 53px;
-    height: 35px;
-    z-index: 2;
-    background: rgb(142, 166, 155);
+  border-radius: 90%;
+  width: 53px;
+  height: 35px;
+  z-index: 2;
+  background: rgb(142, 166, 155);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    /* .logo_curve_bg1 {
+  /* .logo_curve_bg1 {
         animation: App-logo-spin infinite 20s linear;
     } */
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .role {
-    font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .contact-info p {
-    font-size: 1rem;
-    margin: 6px 0;
+  font-size: 1rem;
+  margin: 6px 0;
 }
 
 .cv-link {
-    margin-top: 40px;
-    font-size: 1rem;
-    font-weight: 400;
-    display: inline-block;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
 }
 
 .cv-link span {
-    display: inline-block;
-    transform: translateY(2px);
+  display: inline-block;
+  transform: translateY(2px);
 }
 
 .my-info {
-    opacity: 1;
-    transition: opacity 2s;
+  opacity: 1;
+  transition: opacity 2s;
 }
 
 .about {
-    max-width: 700px;
-    margin: auto;
+  max-width: 700px;
+  margin: auto;
 }
 
 .animate-pulse {
@@ -92,8 +92,15 @@ code {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .timeline::before {
@@ -140,4 +147,8 @@ code {
 .timeline-item p {
   font-size: 14px;
   line-height: 1.6;
+}
+
+.download-btn {
+  transition: background 0.3s ease;
 }
