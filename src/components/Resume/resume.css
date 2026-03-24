@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #f9fafb;
+}
+
+@media print {
+    /* Hide print button */
+    .downloadPDF {
+        display: none;
+    }
+
+    /* Container optimization for A4 page */
+    div[ref] {
+        margin: 0;
+        padding: 0.5in 0.5in 0.5in 0.3in;
+    }
+
+    /* === Core Print Rules === */
+    
+    /* Prevent ALL sections from breaking across pages */
+    section {
+        page-break-inside: avoid;
+        widows: 3;
+        orphans: 3;
+        display: block;
+    }
+
+    /* Prevent headers from orphaning at page bottom */
+    h2 {
+        page-break-after: avoid;
+        margin-bottom: 0.2in;
+    }
+
+    h1, h3, h4 {
+        page-break-after: avoid;
+    }
+
+    /* === Section-Specific Rules === */
+
+    /* Header section - keep with content */
+    .header-section {
+        page-break-after: avoid;
+        margin-bottom: 0.15in;
+    }
+
+    /* Summary should stay intact */
+    .summary-section {
+        page-break-inside: avoid;
+        margin-bottom: 0.15in;
+    }
+
+    /* Skills might be long - but still try to keep intact */
+    .skills-section {
+        page-break-inside: avoid;
+        margin-bottom: 0.15in;
+    }
+
+    /* Education section */
+    .education-section {
+        page-break-inside: avoid;
+        margin-bottom: 0.15in;
+    }
+
+    /* Work section (longest - critical for page breaks) */
+    .work-section {
+        page-break-inside: avoid;
+        margin-bottom: 0.15in;
+    }
+
+    /* Work History - allow controlled breaks if too long */
+    .work-history-section {
+        page-break-inside: avoid;
+    }
+
+    /* Personal details */
+    .personal-details-section {
+        page-break-inside: avoid;
+        margin-bottom: 0.4in;
+        margin-top: 0.5in !important;
+    }
+
+    /* Signature at bottom */
+    .signature-section {
+        page-break-before: avoid;
+        page-break-inside: avoid;
+        margin-top: 0.3in;
+    }
+
+    /* === Content-Level Rules === */
+
+    /* Prevent awkward gaps - keep list items with their content */
+    ul, ol {
+        page-break-inside: avoid;
+        margin: 0.1in 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        page-break-inside: avoid;
+        widow: 2;
+        orphans: 2;
+        margin: 2px 0;
+    }
+
+    /* Ensure proper paragraph formatting */
+    p {
+        widows: 2;
+        orphans: 2;
+        margin: 0;
+        page-break-inside: avoid;
+    }
+
+    /* Control nested divs */
+    div.mt-2,
+    div.mt-3,
+    div.mt-6 {
+        page-break-inside: avoid;
+    }
+
+    /* Adjust margins for natural flow */
+    section + section {
+        margin-top: 0;
+    }
+
+    /* Add space above Current Work section (page 2) using padding-top */
+    section.current-work-section {
+        padding-top: 0.5in !important;
+    }
+
+    /* Add space above Personal Details section (page 3) using padding-top */
+    section.personal-details-section {
+        page-break-inside: avoid;
+        margin-bottom: 0.2in;
+        margin-top: 0 !important;
+        padding-top: 0.5in !important;
+    }
+
+    /* Remove extra spacing that causes gaps */
+    .mt-1 {
+        margin-top: 0.05in;
+    }
+
+    .mt-2 {
+        margin-top: 0.1in;
+    }
+
+    .mt-3 {
+        margin-top: 0.15in;
+    }
+
+    .mt-4 {
+        margin-top: 0.2in;
+    }
+
+    .mt-6 {
+        margin-top: 0.2in;
+    }
+
+    /* Fine-tune padding to fit better */
+    .pl-6 {
+        padding-left: 0.3in;
+    }
+
+    /* Remove margin from print layout */
+    .mx-auto {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Ensure signatures stay on same page */
+    .mx-auto > section:last-child {
+        page-break-before: avoid;
+    }
+
+    /* Control line-height for better fit */
+    .leading-relaxed {
+        line-height: 1.4;
+    }
+
+    /* Minimize border rendering issues */
+    .border-b {
+        border-color: #0d9488;
+    }
+}
